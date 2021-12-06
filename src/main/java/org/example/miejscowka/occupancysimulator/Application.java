@@ -10,11 +10,10 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		OccupancySimulatorLogic simulator = new OccupancySimulatorLogic(List.of(1L, 2L, 3L, 4L, 5L));
+		OccupancySimulatorLogic simulator = new OccupancySimulatorLogic(List.of(1000001L, 1000002L, 1000003L, 1000004L, 1000000L));
 
 		simulator.openConnections();
 		simulator.sendSimulatedOccupancies();
-//		System.out.println("???");
 	}
 
 }

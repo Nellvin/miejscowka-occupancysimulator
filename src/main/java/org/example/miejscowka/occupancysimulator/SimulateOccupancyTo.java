@@ -1,14 +1,11 @@
 package org.example.miejscowka.occupancysimulator;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public class SimulateOccupancyTo implements Serializable {
 
-    private int occupancyChange;
+    private int numberOfPeople;
     private Long placeId;
     private LocalDateTime time;
 
@@ -16,17 +13,17 @@ public class SimulateOccupancyTo implements Serializable {
     }
 
     public SimulateOccupancyTo(int numberOfPeople, Long placeId, LocalDateTime time) {
-        this.occupancyChange = numberOfPeople;
+        this.numberOfPeople = numberOfPeople;
         this.placeId = placeId;
         this.time = time;
     }
 
-    public int getOccupancyChange() {
-        return occupancyChange;
+    public int getNumberOfPeople() {
+        return numberOfPeople;
     }
 
-    public void setOccupancyChange(int occupancyChange) {
-        this.occupancyChange = occupancyChange;
+    public void setNumberOfPeople(int numberOfPeople) {
+        this.numberOfPeople = numberOfPeople;
     }
 
     public Long getPlaceId() {
