@@ -1,4 +1,4 @@
-package org.example.miejscowka.occupancysimulator;
+package org.example.miejscowka.occupancysimulator.model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
