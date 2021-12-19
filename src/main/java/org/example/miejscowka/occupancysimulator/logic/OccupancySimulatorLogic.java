@@ -38,7 +38,7 @@ public class OccupancySimulatorLogic {
 
     @EventListener(ApplicationReadyEvent.class)
     public void doSomethingAfterStartup() {
-        placesId = List.of(1000001L, 1000002L, 1000003L, 1000004L, 1000000L);
+        placesId = List.of(1000000L, 1000001L, 1000002L, 1000003L, 1000004L, 1000005L, 1000006L, 1000007L);
         openingHours = placeHandling.findOpeningHours(placesId);
         occupancySimulatorService.openConnections();
         sendSimulatedOccupancies();

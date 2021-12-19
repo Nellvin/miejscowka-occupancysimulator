@@ -23,11 +23,11 @@ public class OccupancySimulatorServiceImpl {
     private static final Logger LOG = LoggerFactory.getLogger(OccupancySimulatorLogic.class);
 
     @Value("${app.service.domain}")
-    private String serviceDomain = "localhost";
-    @Value("${server.port}")
-    private int servicePort = 8060;
+    private String serviceDomain ;
+    @Value("${app.service.port}")
+    private int servicePort;
     @Value("${app.service.api.path}")
-    private String serviceApiPath = "occupancy/relative";
+    private String serviceApiPath;
 
     private CloseableHttpClient httpclient;
     private HttpPost httppost;
